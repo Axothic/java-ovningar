@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import static org.junit.Assert.assertEquals;
 
 // Enhetstest för inlämnngen split
-/*
+
 public class splitTest {
     @Test
     public void testSplitSingle() {
@@ -16,7 +16,7 @@ public class splitTest {
         ArrayList<String> expected = new ArrayList<String>();
         expected.add("1. Menyval");
 
-        ArrayList<String> actual = split.split(input1, input2);
+        ArrayList<String> actual = App.split(input1, input2);
 
         assertEquals(expected, actual);
     }
@@ -33,7 +33,7 @@ public class splitTest {
         expected.add("2. Menyval 2");
         expected.add("3. Menyval 3");
 
-        ArrayList<String> actual = split.split(input1, input2);
+        ArrayList<String> actual = App.split(input1, input2);
 
         assertEquals(expected, actual);
     }
@@ -46,9 +46,8 @@ public class splitTest {
         ArrayList<String> expected = new ArrayList<String>();
         expected.add(input1);
 
-        ArrayList<String> actual = split.split(input1, input2);
+        ArrayList<String> actual = App.split(input1, input2);
 
         assertEquals(expected, actual);
     }
 }
-*/

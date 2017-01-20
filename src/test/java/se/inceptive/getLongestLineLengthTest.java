@@ -15,7 +15,7 @@ public class getLongestLineLengthTest {
         input.add("1");
         int expected = 1;
 
-        int actual = getLongestLineLength.getLongestLineLengthFunc(input);
+        int actual = App.getLongestLineLength(input);
 
         assertEquals(expected, actual);
     }
@@ -27,7 +27,7 @@ public class getLongestLineLengthTest {
         input.add("123456");
         int expected = 6;
 
-        int actual = getLongestLineLength.getLongestLineLengthFunc(input);
+        int actual = App.getLongestLineLength(input);
 
         assertEquals(expected, actual);
     }
@@ -41,7 +41,7 @@ public class getLongestLineLengthTest {
 
         int expected = 80;
 
-        int actual = getLongestLineLength.getLongestLineLengthFunc(input);
+        int actual = App.getLongestLineLength(input);
 
         assertEquals(expected, actual);
     }
@@ -51,7 +51,7 @@ public class getLongestLineLengthTest {
         ArrayList<String> input = new ArrayList<String>();
         int expected = 0;
 
-        int actual = getLongestLineLength.getLongestLineLengthFunc(input);
+        int actual = App.getLongestLineLength(input);
 
         assertEquals(expected, actual);
     }

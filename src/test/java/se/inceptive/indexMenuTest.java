@@ -17,7 +17,7 @@ public class indexMenuTest {
         input.add("Menyval 1");
         String expected = "1. Menyval 1\n";
 
-        String actual = indexMenu.indexMenuFunc(input);
+        String actual = App.indexMenu(input);
 
         Assert.assertEquals(expected, actual);
     }
@@ -32,7 +32,7 @@ public class indexMenuTest {
                 "2. Menyval 2\n" +
                 "3. Menyval 3\n";
 
-        String actual = indexMenu.indexMenuFunc(input);
+        String actual = App.indexMenu(input);
 
         assertEquals(expected, actual);
     }
@@ -42,7 +42,7 @@ public class indexMenuTest {
         ArrayList<String> input = new ArrayList<String>();
         String expected = "";
 
-        String actual = indexMenu.indexMenuFunc(input);
+        String actual = App.indexMenu(input);
 
         assertEquals(expected, actual);
     }
