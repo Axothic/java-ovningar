@@ -14,7 +14,7 @@ public class repeatCharTest
         int input2 = 1;
         String expected = "!";
 
-        String actual = repeatChar.repeatCharFunc(input1, input2);
+        String actual = App.repeatChar(input1, input2);
 
         assertEquals(expected, actual);
     }
@@ -25,7 +25,7 @@ public class repeatCharTest
         int input2 = 3;
         String expected = "!!!";
 
-        String actual = repeatChar.repeatCharFunc(input1, input2);
+        String actual = App.repeatChar(input1, input2);
 
         assertEquals(expected, actual);
     }
@@ -36,7 +36,7 @@ public class repeatCharTest
         int input2 = 0;
         String expected = "";
 
-        String actual = repeatChar.repeatCharFunc(input1, input2);
+        String actual = App.repeatChar(input1, input2);
 
         assertEquals(expected, actual);
     }
